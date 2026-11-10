@@ -20,3 +20,21 @@ print(Student.college_name)
 print(stud1.PI)
 
 # instance attribute has higer priority.
+
+
+class Laptop:
+    storage_type = "SSD"
+
+    def __init__(self, RAM, storage):
+        self.RAM = RAM
+        self.storage = storage
+
+    def get_info(self): # instance method
+        print(f"laptop has {self.RAM} RAM and {self.storage} {self.storage_type}")
+
+l1 = Laptop("16GB", "512GB")
+l2 = Laptop("8GB", "256GB")
+l3 = Laptop("4GB", "128GB")
+
+l1.get_info()
+l2.get_info()

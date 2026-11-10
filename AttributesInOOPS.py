@@ -29,6 +29,10 @@ class Laptop:
         self.RAM = RAM
         self.storage = storage
 
+    @classmethod # decorator -> changes behaviour
+    def get_storage_type(cls):
+        print(f"storage type = {cls.storage_type}")
+
     def get_info(self): # instance method
         print(f"laptop has {self.RAM} RAM and {self.storage} {self.storage_type}")
 
@@ -38,3 +42,6 @@ l3 = Laptop("4GB", "128GB")
 
 l1.get_info()
 l2.get_info()
+
+Laptop.get_storage_type()
+l1.get_storage_type()

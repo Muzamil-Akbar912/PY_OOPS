@@ -17,3 +17,5 @@ print(stud1.name, stud1.cgpa)
 print(stud2.name, stud2.cgpa)
 
 print(f"{stud1.name} has cgpa = {stud1.get_cgpa()}")
+
+# Types of constructors: 1. default constructor 2. Parameterized constructor 

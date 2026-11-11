@@ -1,3 +1,5 @@
+# method overriding
+
 class Employee:
     def get_designation(self):
         print("designation = Employee")
